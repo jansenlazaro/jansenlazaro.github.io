@@ -1,363 +1,414 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Jansen Lazaro</title>
-    <link rel="stylesheet" href="assets/main.css" type="text/css">
-    <link rel="stylesheet" href="semantic/dist/semantic.min.css" type="text/css">
-    <script src="semantic/dist/semantic.min.js"></script>
-    <script type="text/javascript" src="javascript/scroll.js"></script>
-    <script src="https://use.fontawesome.com/88c3d7cad7.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  </head>
-  <body id="outerSpace">
-    
-    <section id="menu">
-      <a class="home item smoothScroll" href="#home">Home</a>
-      <a class="item smoothScroll" href="#me">About</a>
-      <a class="item smoothScroll" href="#projects">Projects</a>
-      <a class="item smoothScroll" href="#resume">Resume</a>
-      <a class="item smoothScroll" href="#contact">Contact</a>
-    </section>
+<!-- Means we are using HTML 5 -->
+<!-- Shows that the site is english so Google can translate easier -->
+<html lang="en">
+<head>
+  <title>Jennifer Tran</title>
+  <meta charset="utf-8">
 
-    <section id="home">
-      <div class="sky">
-        <div class="stars"></div>
-        <div class="stars1"></div>
-        <div class="stars2"></div>
-        <div class="shooting-stars"></div>
-      </div>
-      <div class="logo">
-        <div class="name">
-          <strong><h1>Jansen Lazaro</h1></strong>
-		  <h2>Software Developer</h2></div>
-        <div class="description">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/clouds.ico">
+
+  <!-- Links to other files -->
+  <link rel="stylesheet" href="assets/main.css"/>
+
+  <!-- Bootstrap and Font-awesome CDN's -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!--Makes sure it's being viewed properly-->
+  <!-- user-scalable doesn't allow ppl to zoom in on mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-91312617-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+<!-- APIS -->
+
+<!-- Backup Font if custom one fails -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat" rel="stylesheet" type="text/css">
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#about" onclick="closer()">About</a>
+    <a href="#skills" onclick="closer()">Skills</a>
+    <a href="#projects" onclick="closer()">Projects</a>
+    <a href="https://jennifertran.github.io/MiniProjects/" onclick="closer()" target="_blank">Mini Projects</a>
+    <a href="#contact" onclick="closer()">Contact</a>
+  </div>
+
+</div>
+
+<!-- Where all the content goes.. -->
+<body>
+
+<!-- Header -->
+<div class="header vertical-center">
+
+  <a id="hamburger-icon" href="#" title="Menu" onclick="openNav()">
+    <span class="line line-1"></span>
+    <span class="line line-2"></span>
+    <span class="line line-3"></span>
+  </a>
+
+  <div class="container-fluid">
+    <div class="center">
+      <strong><h1>JENNIFER TRAN</h1></strong>
+      <h2>Developer & Designer</h2>
+    </div>
+  </div>
+  <canvas class="background">
+  </canvas>
+</div>
+
+<!-- About page -->
+<div class="about padding" id="about">
+  <div class="row">
+    <div class="container-fluid">
+      <div class="col-md-4">
+        <div class="profile">
+
+          <!-- Alt is used if the image is not loading -->
+          <center><img src="assets/images/profile.jpg" id="portPic" alt="Simple icon" class="img-responsives
+            img-circle"></center>
         </div>
       </div>
-      <div id="opening">
-        <article class="go-down">
-          <a class="smoothScroll" id="learnAboutMe" href="#me">
-            <p class="scroll-description">Learn more about me</p>
-            <i class="angle double down icon"></i>
+
+      <div class="col-md-8">
+        <div class="about-description">
+          <b><h3>About Me</h3></b>
+          <hr>
+          <p>Hello! I'm currently a Computer Science student at the University of Manitoba who loves learning
+            about new software technologies and design. Ever since I was exposed to web development in elementary
+            school, my passion for software have grown tremendously throughout the years.
+            <br><br>
+            As a hobby, I like to read, draw, and give back to the community by volunteering at local events and
+            being one of the leaders of a student group called .devClub. In the
+            future, I hope to create some projects that shows people the beauty behind design.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Skills -->
+<div class="skills padding" id="skills">
+  <div class="container" style="font-family: 'Open Sans'">
+    <b><h3>Skills</h3></b>
+    <hr>
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <center><i class="contact-icon fa fa-gear fa-3x"></i>
+          <strong><h4>Programming Languages</h4></strong></center>
+        <ul>
+          <li>Java</li>
+          <li>C</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>Ruby</li>
+          <li>Ruby on Rails</li>
+        </ul>
+        <br>
+      </div>
+
+      <div class="col-md-4 col-sm-4">
+        <center><i class="contact-icon fa fa-window-maximize fa-3x"></i>
+          <strong><h4>Web Languages/Frameworks</h4></strong></center>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flask</li>
+          <li>Bower</li>
+          <li>Bootstrap</li>
+          <li>jQuery</li>
+          <li>Three.js</li>
+        </ul>
+        <br>
+      </div>
+
+      <div class="col-md-4 col-sm-4">
+        <center><i class="contact-icon fa fa-cloud fa-3x"></i>
+          <strong><h4>Other</h4></strong></center>
+        <ul>
+          <li>SQL</li>
+          <li>Android</li>
+          <li>UI/UX Design</li>
+          <li>Git</li>
+          <li>UNIX</li>
+          <li>Latex</li>
+        </ul>
+        <br>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="projects padding" id="projects">
+  <div class="container">
+    <b><h3>Projects</h3></b>
+    <hr>
+    <br>
+
+    <div class="row">
+      <div>
+        <!-- Music Visualizer -->
+        <div class="col-md-5">
+          <center><img src="assets/images/visualizer.png" alt="Music Visualizer" class="img-responsive"></center>
+        </div>
+        <div class="col-md-7">
+          <b><h3>Music Visualizer</h3></b>
+          <hr>
+          <p>Dynamically displays a visual effect that is responsive to an audio track with dynamic interfaces</p>
+          <br>
+          <p><a href="https://jennifertran.github.io/MusicVisualizer/" target="_blank">Demo</a> | <a
+                  href="https://github.com/jennifertran/MusicVisualizer" target="_blank">Source</a></p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div>
+        <!-- Search Engine Award -->
+        <div class="col-md-5">
+          <center><img src="assets/images/searchengineaward.png" alt="Search Engine Award" class="img-responsive"></center>
+        </div>
+        <div class="col-md-7">
+          <b><h3>Search Engine Award</h3></b>
+          <hr>
+          <p>An improved version of the University of Manitoba's Award's Database, made for an Industry Project</p>
+          <br>
+          <p><a href="https://searchengineaward.herokuapp.com/" target="_blank">Demo</a> | <a
+                  href="https://github.com/jennifertran/SearchEngineAward" target="_blank">Source</a></p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div>
+        <!-- Travelers -->
+        <div class="col-md-5">
+          <center><img src="assets/images/travelers.jpg" alt="Travelers" class="img-responsive"></center>
+        </div>
+        <div class="col-md-7">
+          <b><h3>Travelers</h3></b>
+          <hr>
+          <p>A booking application that allows users to book for flights, car rentals, and hotels</p>
+          <br>
+          <p><a href="https://github.com/jennifertran/Travelers" target="_blank">Source</a></p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div>
+        <!-- Dev Match -->
+        <div class="col-md-5">
+          <center><img src="assets/images/DevMatch.png" alt="Dev Match" class="img-responsive"></center>
+        </div>
+        <div class="col-md-7">
+          <b><h3>Dev Match</h3></b>
+          <hr>
+          <p>A Ruby on Rails app that allows entrepreneurs and developers meetup. Features include a user interface,
+            login/logout system with authentication, email notifications, and subscription payments for premium
+            services</p>
+          <br>
+          <p><a href="https://dev-match1.herokuapp.com/" target="_blank">Demo</a> | <a
+                  href="https://github.com/jennifertran/DevMatch" target="_blank">Source</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div>
+        <!-- JavaScript 30 -->
+        <div class="col-md-5">
+          <center><img src="assets/images/JavaScript30.png" alt="JavaScript30" class="img-responsive"></center>
+        </div>
+        <div class="col-md-7">
+          <b><h3>JavaScript 30</h3></b>
+          <hr>
+          <p>A coding challenge that builds 30 different projects in 30 days. Used HTML, CSS, JavaScript</p>
+          <br>
+          <p><a href="https://jennifertran.github.io/JavaScript30/" target="_blank">Demo</a> | <a
+                  href="https://github.com/jennifertran/JavaScript30" target="_blank">Source</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div>
+        <!-- MiniProjects -->
+        <div class="col-md-5">
+          <center><img src="assets/images/MiniProjects.png" alt="Mini Projects" class="img-responsive"></center>
+        </div>
+        <div class="col-md-7">
+          <b><h3>Mini Projects</h3></b>
+          <hr>
+          <p>A collection of experimental web projects ranging from 3D graphics to simple UI interfaces</p>
+          <br>
+          <p><a href="https://jennifertran.github.io/MiniProjects/" target="_blank">Demo</a> | <a
+                  href="https://github.com/jennifertran/MiniProjects" target="_blank">Source</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div>
+        <!-- Space Simulator -->
+        <div class="col-md-5">
+          <center><img src="assets/images/space.png" alt="Space Simulator in VR" class="img-responsive"></center>
+        </div>
+        <div class="col-md-7">
+          <b><h3>Space Simulator in VR</h3></b>
+          <hr>
+          <p>An outer space environment in WebVR using the framework A-Frame. Created during MLH Local Hack Day
+            2016</p>
+          <br>
+          <p><a href="https://jennifertran.github.io/space-simulator/" target="_blank">Demo</a> | <a
+                  href="https://github.com/jennifertran/space-simulator" target="_blank">Source</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div>
+        <!-- Online Ordering System -->
+        <div class="col-md-5">
+          <center><img src="assets/images/OnlineOrder.png" alt="Online Ordering System" class="img-responsive"></center>
+        </div>
+        <div class="col-md-7">
+          <center><b><h3>Online Ordering System</h3></b></center>
+          <hr>
+          <p>A web application that allows customers to order food from various resturants. Used HTML, CSS, JavaScript,
+            jQuery, and BootStrap</p>
+          <br>
+          <p><a href="https://jennifertran.github.io/online-ordering-system/" target="_blank">Demo</a> | <a
+                  href="https://github.com/jennifertran/online-ordering-system" target="_blank">Source</a></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Contact -->
+<div class="contact padding" id="contact">
+  <div class="container">
+    <b><h3>Contact Me</h3></b>
+    <hr>
+    <div class="row">
+      <center>
+
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://twitter.com/jenniferttran" target="blank">
+            <i class="contact-icon fa fa-twitter fa-5x"></i>
           </a>
-        </article>
-      </div>
-    </section>
+          <br>
+        </div>
 
-    <section id="me">
-      <div id="photoDiv">
-        <img id="profilePhoto" src="./assets/profilePhoto.png" alt="profile photo">
-      </div>
-      <div id="intro">
-        <h1 class="section-title">About</h1>
-        <div>
-          <p>
-            I am a full stack JavaScript engineer. My specialities are in React and Redux on the front end and Node on the back end. I use relational and non-relational databases.
-          </p>
-          <p>
-            Coding is an addiction for me. I love learning the newest and latest technologies, assembling them together to build products that are useful. Seeing these tools in use is ultimately what drives my passion in technology. Technologies I am currently learning for professional development are Python for backend development and Hadoop for scaling. For personal interest, I am currently engaged in Phaser and D3. 2D game development has really grappled my attention, and I have built a couple of simple games with Phaser 3. There is so much I want to learn but not nearly enough time to get to it all.
-          </p>
-          <p>
-            My previous profession was in finance where I qualified as an ACCA accountant - CPA equivalent - in the UK. This included work in financial control, financial analysis, payments and taxation.
-          </p>
-          <p>
-            Besides technology, my hobbies and interests are natural history, country walks, growing vegetables, gym, sports, reading, theatre, cooking and drinking tea.
-          </p>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://www.instagram.com/jenniferttran/" target="blank">
+            <i class="contact-icon fa fa-instagram fa-5x"></i>
+          </a>
+          <br>
         </div>
-      </div>
-    </section>
 
-    <section id="projects">
-      <h1 class="section-title">Projects</h1>
-      <article class="projectArticle">
-        <div class="projectDesc">
-          <h2>Nest Egg</h2>
-          <p>
-            This is a current personal project that I recently started and a work in progress. I am adding new features to it over time. Nest Egg is an online trade blotter to store one's equities portfolio. The main existing features are:
-            <ul>
-              <li>Displays equity holdings, price, and P&L</li>
-              <li>Records transactions by ticket submission</li>
-              <li>Displays transactions</li>
-              <li>Automatic daily price updates and P&L calculation</li>
-            </ul>
-          </p>
-          <div class="technology">
-            <h3>Technology</h3>
-            <p>
-              Nest Egg is built with the MERN stack.
-            </p>
-            <div class="techStack">
-              <img class="techLogo" src="./assets/techStack/react.png" alt="react" />
-              <img class="techLogo" src="./assets/techStack/redux.png" alt="redux" />
-              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
-              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
-              <img class="techLogo" src="./assets/techStack/mongodb.png" alt="mongo" />
-              <img class="techLogo" src="./assets/techStack/mongoose.png" alt="mongoose" />
-            </div>
-          </div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="mailto:jennifer.tran101@gmail.com" target="blank">
+            <i class="contact-icon fa fa-envelope fa-5x"></i>
+          </a>
+          <br>
         </div>
-        <div class="projectPreviewOptions">
-          <div class="projectImgContainer">
-            <img class="projectSlideImg nestEgg" src="./assets/nestEgg/nestEggPhoto1.png" alt="nestEgg photo"></img>
-            <img class="projectSlideImg nestEgg" src="./assets/nestEgg/nestEggPhoto2.png" alt="nestEgg photo"></img>
-            <img class="projectSlideImg nestEgg" src="./assets/nestEgg/nestEggPhoto3.png" alt="nestEgg photo"></img>
-            <div class="pagination">
-              <i class="angle left icon projectNav" onclick="plusDivs(-1, 'nestEgg', 'nestEggPageNumber')"></i>
-              <div class="pageNumbers">
-                <span class="nestEggPageNumber pageNumber" onclick="currentDiv(0, 'nestEgg', 'nestEggPageNumber')">1</span>
-                <span class="nestEggPageNumber pageNumber" onclick="currentDiv(1, 'nestEgg', 'nestEggPageNumber')">2</span>
-                <span class="nestEggPageNumber pageNumber" onclick="currentDiv(2, 'nestEgg', 'nestEggPageNumber')">3</span>
-              </div>
-              <i class="angle right icon projectNav" onclick="plusDivs(1, 'nestEgg', 'nestEggPageNumber')"></i>
-            </div>
-          </div>
-          <div class="projectButtons">
-            <div class="buttonRow">
-              <a class="projectLinkButton" href="https://github.com/pa87901/nestEgg" target="_blank">
-                <button class="ui negative button">
-                  GitHub base
-                </button>
-              </a>
-              <a class="projectLinkButton" target="_blank" data-inverted="" data-tooltip="Coming soon..." data-position="top left">
-                <button class="ui positive button" disabled>
-                  Video cast
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
 
-      <div class="projectDivider"></div>
-      <article class="projectArticle">
-        <div class="projectDesc">
-          <h2>Localize</h2>
-          <p>
-            Localize is a native app for the iPhone that connects tourists with local tour guides. Core functions included:
-            <ul>
-              <li>Search</li>
-              <li>Guide and user profiles</li>
-              <li>Real-time chat</li>
-              <li>Itinerary building</li>
-              <li>Payment via Stripe</li>
-            </ul>
-          </p>
-          <div class="technology">
-            <h3>Technology</h3>
-            <p>
-              Localize's front end was built using React Native and Redux; the back end was built with Node and Express. A PostgreSQL database was used for persisting data. The Google Maps and Google Places APIs were used to offer the points of interest visualisation feature. Security involved the use of Auth0. Payments for services were executed via the Stripe API.
-            </p>
-            <div class="techStack">
-              <img class="techLogo" src="./assets/techStack/reactNative.png" alt="react" />
-              <img class="techLogo" src="./assets/techStack/redux.png" alt="redux" />
-              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
-              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
-              <img class="techLogo" src="./assets/techStack/redis.png" alt="redis" />
-              <img class="techLogo" src="./assets/techStack/socketio.png" alt="socketio" />
-              <img class="techLogo" src="./assets/techStack/postgresql.png" alt="postgresql" />
-              <img class="techLogo" src="./assets/techStack/bookshelf.png" alt="bookshelf" />
-            </div>
-          </div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://github.com/jennifertran" target="blank">
+            <i class="contact-icon fa fa-github fa-5x"></i>
+          </a>
+          <br>
         </div>
-        <div class="projectPreviewOptions">
-          <div class="projectImgContainer">
-            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto.png" alt="localize photo"/>
-            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto2.png" alt="localize photo"/>
-            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto3.png" alt="localize photo"/>
-            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto4.png" alt="localize photo"/>
-            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto5.png" alt="localize photo"/>
-            <div class="pagination">
-              <i class="angle left icon projectNav" onclick="plusDivs(-1, 'localize', 'localizePageNumber')"></i>
-              <div class="pageNumbers">
-                <span class="localizePageNumber pageNumber" onclick="currentDiv(0, 'localize', 'localizePageNumber')">1</span>
-                <span class="localizePageNumber pageNumber" onclick="currentDiv(1, 'localize', 'localizePageNumber')">2</span>
-                <span class="localizePageNumber pageNumber" onclick="currentDiv(2, 'localize', 'localizePageNumber')">3</span>
-                <span class="localizePageNumber pageNumber" onclick="currentDiv(3, 'localize', 'localizePageNumber')">4</span>
-                <span class="localizePageNumber pageNumber" onclick="currentDiv(4, 'localize', 'localizePageNumber')">5</span>
-              </div>
-              <i class="angle right icon projectNav" onclick="plusDivs(1, 'localize', 'localizePageNumber')"></i>
-            </div>
-          </div>
-          <div class="projectButtons">
-            <div class="buttonRow">
-              <a class="projectLinkButton" href="https://github.com/LightningLadles" target="_blank">
-                <button class="ui negative button">
-                  GitHub base
-                </button>
-              </a>
-              <a class="projectLinkButton" href="https://www.youtube.com/watch?v=r5UK9K7VzaM&t=14s" target="_blank">
-                <button class="ui positive button">
-                  Video cast
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-      
-      <div class="projectDivider"></div>
-      <article class="projectArticle">
-        <div class="projectDesc">
-          <h2>4UM</h2>
-          <p>
-            4UM is a native app for the iPhone that brings together digital technology enthusiasts to discuss related topics. The app has a rating system that rewards users who answer more questions. The mode of communication is instant chat.
-          </p>
-          <div class="technology">
-            <h3>Technology</h3>
-            <p>
-              4UM was built with React Native on the front end and Node with Express on the back end. WebSockets was used to enable the instant chat feature. Authentication was incorporated using the Firebase service.
-            </p>
-            <div class="techStack">
-              <img class="techLogo" src="./assets/techStack/reactNative.png" alt="react" />
-              <img class="techLogo" src="./assets/techStack/redux.png" alt="redux" />
-              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
-              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
-              <img class="techLogo" src="./assets/techStack/socketio.png" alt="socketio" />
-              <img class="techLogo" src="./assets/techStack/postgresql.png" alt="postgresql" />
-              <img class="techLogo" src="./assets/techStack/bookshelf.png" alt="bookshelf" />
-              
-            </div>
-          </div>
-        </div>
-        <div class="reactNativeContainer">
-          <div class="projectPreviewOptions">
-            <img class="projectImg 4UM" id="nativeApp" src="./assets/4UMPhoto.png" alt="4UM photo"/>
-            <div class="projectButtons" id="nativeAppButtons">
-              <div class="buttonRow" id="nativeAppButtonRow">
-                <a class="projectLinkButton" href="https://github.com/Skooled/Magenta-Elephants" target="_blank">
-                  <button class="ui negative button">
-                    GitHub base
-                  </button>
-                </a>
-                <a class="projectLinkButton" href="https://www.youtube.com/watch?v=z2ZDnolEX6Q" target="_blank">
-                  <button class="ui positive button">
-                    Video cast
-                  </button>
-                </a>
-              </div>
-            </div>
-        </div>
-      </article>
-      <div class="projectDivider"></div>
-      <article class="projectArticle">
-        <div class="projectDesc">
-          <h2>Skooled</h2>
-          <p>
-            Skooled is a Edutech app that brings together school teachers and parents. The original idea was to enable teachers to communicate school activities to parents and request parental permission. Responses are recorded so that teachers can proceed with their school activities accordingly. Parents can view all documents for only their child or children, and teachers can view all documents for each of their pupils. Video chat enables real time visual and audio communication between parties.
-          </p>
-          <div class="technology">
-            <h3>Technology</h3>
-            <p>
-              React was used on the front end and Node on the back end. The relational database was MySQL. The video chat feature was built with WebRTC.
-            </p>
-            <div class="techStack">
-              <img class="techLogo" src="./assets/techStack/react.png" alt="react" />
-              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
-              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
-              <img class="techLogo" src="./assets/techStack/mysql.png" alt="mysql" />
-            </div>
-          </div>
-        </div>
-        <div class="projectPreviewOptions">
-          <img class="projectImg" src="./assets/skooledPhoto.png" alt="skooled photo"/>
-          <div class="projectButtons">
-            <div class="buttonRow">
-              <a class="projectLinkButton" href="https://github.com/Skooled/skooled" target="_blank">
-                <button class="ui negative button">
-                  GitHub base
-                </button>
-              </a>
-              <a class="projectLinkButton" href="https://www.youtube.com/watch?v=QYLOfbJKiLw" target="_blank">
-                <button class="ui positive button">
-                  Video cast
-                </button>
-              </a>
-            </div>
-        </div>
-      </article>
-      <div class="projectDivider"></div>
-      <article class="projectArticle">
-        <div class="projectDesc">
-          <h2>Tic Tac Toe</h2>
-          <p>
-            Tic Tac Toe is a web app that allows two players to play matches and save their usernames, avatars and scores. Players can return at a future date and play against other players. The top three players by wins are displayed.
-          </p>
-          <div class="technology">
-            <h3>Technology</h3>
-            <p>
-              The UI uses React and Semantic-UI. The backend uses Node and Express with a worker that wakes up periodically to calculate the scores of each player. Communication with the database is enabled using PG-Promise.
-            </p>
-            <div class="techStack">
-              <img class="techLogo" src="./assets/techStack/react.png" alt="react" />
-              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
-              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
-              <img class="techLogo" src="./assets/techStack/postgresql.png" alt="postgresql" />
-              <img class="techLogo" src="./assets/techStack/jest.svg" alt="jest" />
-            </div>
-          </div>
-        </div>
-        <div class="projectPreviewOptions">
-          <div class="projectImgContainer">
-            <img class="projectImg tictactoe" src="./assets/tictactoePhoto.png" alt="tictactoe photo"/>
-          </div>
-          <div class="projectButtons">
-            <div class="buttonRow">
-              <a class="projectLinkButton" href="https://github.com/pa87901/ticTacToeGame" target="_blank">
-                <button class="ui negative button">
-                  GitHub base
-                </button>
-              </a>
-              <a class="projectLinkButton" href="https://www.youtube.com/watch?v=PPvXOKS4M-4" target="_blank">
-                <button class="ui positive button">
-                  Video cast
-                </button>
-              </a>
-            </div>
-        </div>
-      </article>
-    </section>
 
-    <section id="resume">
-      <div class="resumeDesc">
-        <h1 class="section-title">Resume</h1>
-        <article id="resumeInstruction">Download my resume here:</article>
-        <a id="download" href="assets/Preda curriculum vitae.pdf" download="" data-inverted="" data-tooltip="Click to download resume" data-position="bottom left">
-          <i class="download icon"></i>
-        </a>
-      </div>
-      <div id="resumeImgLink">
-        <a href="https://drive.google.com/open?id=1-ki57CJ8o_uqDBZUsKoezaEsz_ObVd8v" data-inverted="" data-tooltip="Click to view PDF version" data-position="right center" target="_blank">
-          <img id="resumeImg" src="./assets/resumeImg4.png" alt="resume"></img>
-        </a>
-      </div>
-    </section>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://ca.linkedin.com/in/jennifer-tran1" target="blank">
+            <i class="contact-icon fa fa-linkedin fa-5x"></i>
+          </a>
+          <br>
+        </div>
 
-    <footer id="contact">
-      <div id="contactLinks">
-        <a href="https://github.com/pa87901" target="_blank">
-          <i class="github icon external"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/preda-wen" target="_blank">
-          <i class="linkedin square icon external"></i>
-        </a>
-        <a href="https://medium.com/@Preda" target="_blank">
-          <i class="medium icon external"></i>
-        </a>
-        <a href="https://angel.co/preda" target="_blank">
-          <i class="angellist icon external"></i>
-        </a>
-        <a href="https://stackoverflow.com/users/7737763/pa87901" target="_blank">
-          <i class="stack overflow icon external"></i>
-        </a>
-        <a href="mailto:preda.anu@gmail.com" data-inverted="" data-tooltip="preda.anu@gmail.com" data-position="top left">
-          <i class="mail outline icon"></i>
-        </a>
-      </div>
-    </footer>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="http://codepen.io/JustClouds" target="blank">
+            <i class="contact-icon fa fa-codepen fa-5x"></i>
+          </a>
+          <br>
+        </div>
 
-    <!-- Script for smooth scrolling between sections -->
-    <script type="text/javascript" src="javascript/linksScroll.js"></script>
-    <!-- Script for project slideshow -->
-    <script type="text/javascript" src="javascript/projectSlide.js"></script>
-  </body>
+      </center>
+    </div>
+
+  </div>
+</div>
+
+<!--Footer-->
+<div class="footer header">
+  <div class="container">
+    <footer><p>© 2017 by Jennifer Tran</p></footer>
+  </div>
+</div>
+
+<!-- Imports jquery,bootstrap, and javascript -->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>

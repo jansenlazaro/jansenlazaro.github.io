@@ -5,3 +5,374 @@
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Preda A...</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="semantic/dist/semantic.min.css" type="text/css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/988D3DE7-D23C-B342-9031-9FED8342952D/main.js" charset="UTF-8"></script><script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="javascript/scroll.js"></script>
+    <script src="https://use.fontawesome.com/88c3d7cad7.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  </head>
+  <body id="outerSpace">
+    
+    <section id="menu">
+      <a class="home item smoothScroll" href="#home">Home</a>
+      <a class="item smoothScroll" href="#me">About</a>
+      <a class="item smoothScroll" href="#projects">Projects</a>
+      <a class="item smoothScroll" href="#resume">Resume</a>
+      <a class="item smoothScroll" href="#contact">Contact</a>
+    </section>
+
+    <section id="home">
+      <div class="sky">
+        <div class="stars"></div>
+        <div class="stars1"></div>
+        <div class="stars2"></div>
+        <div class="shooting-stars"></div>
+      </div>
+      <div class="logo">
+        <div class="name">
+          <span class="letter">P</span>
+          <span class="letter">R</span>
+          <span class="letter">E</span>
+          <span class="letter">D</span>
+          <span class="letter">A</span>
+        </div>
+        <div class="description">
+        </div>
+      </div>
+      <div id="opening">
+        <article class="go-down">
+          <a class="smoothScroll" id="learnAboutMe" href="#me">
+            <p class="scroll-description">Learn more about me</p>
+            <i class="angle double down icon"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="me">
+      <div id="photoDiv">
+        <img id="profilePhoto" src="./assets/profilePhoto.png" alt="profile photo">
+      </div>
+      <div id="intro">
+        <h1 class="section-title">About</h1>
+        <div>
+          <p>
+            I am a full stack JavaScript engineer. My specialities are in React and Redux on the front end and Node on the back end. I use relational and non-relational databases.
+          </p>
+          <p>
+            Coding is an addiction for me. I love learning the newest and latest technologies, assembling them together to build products that are useful. Seeing these tools in use is ultimately what drives my passion in technology. Technologies I am currently learning for professional development are Python for backend development and Hadoop for scaling. For personal interest, I am currently engaged in Phaser and D3. 2D game development has really grappled my attention, and I have built a couple of simple games with Phaser 3. There is so much I want to learn but not nearly enough time to get to it all.
+          </p>
+          <p>
+            My previous profession was in finance where I qualified as an ACCA accountant - CPA equivalent - in the UK. This included work in financial control, financial analysis, payments and taxation.
+          </p>
+          <p>
+            Besides technology, my hobbies and interests are natural history, country walks, growing vegetables, gym, sports, reading, theatre, cooking and drinking tea.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 class="section-title">Projects</h1>
+      <article class="projectArticle">
+        <div class="projectDesc">
+          <h2>Nest Egg</h2>
+          <p>
+            This is a current personal project that I recently started and a work in progress. I am adding new features to it over time. Nest Egg is an online trade blotter to store one's equities portfolio. The main existing features are:
+            <ul>
+              <li>Displays equity holdings, price, and P&L</li>
+              <li>Records transactions by ticket submission</li>
+              <li>Displays transactions</li>
+              <li>Automatic daily price updates and P&L calculation</li>
+            </ul>
+          </p>
+          <div class="technology">
+            <h3>Technology</h3>
+            <p>
+              Nest Egg is built with the MERN stack.
+            </p>
+            <div class="techStack">
+              <img class="techLogo" src="./assets/techStack/react.png" alt="react" />
+              <img class="techLogo" src="./assets/techStack/redux.png" alt="redux" />
+              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
+              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
+              <img class="techLogo" src="./assets/techStack/mongodb.png" alt="mongo" />
+              <img class="techLogo" src="./assets/techStack/mongoose.png" alt="mongoose" />
+            </div>
+          </div>
+        </div>
+        <div class="projectPreviewOptions">
+          <div class="projectImgContainer">
+            <img class="projectSlideImg nestEgg" src="./assets/nestEgg/nestEggPhoto1.png" alt="nestEgg photo"></img>
+            <img class="projectSlideImg nestEgg" src="./assets/nestEgg/nestEggPhoto2.png" alt="nestEgg photo"></img>
+            <img class="projectSlideImg nestEgg" src="./assets/nestEgg/nestEggPhoto3.png" alt="nestEgg photo"></img>
+            <div class="pagination">
+              <i class="angle left icon projectNav" onclick="plusDivs(-1, 'nestEgg', 'nestEggPageNumber')"></i>
+              <div class="pageNumbers">
+                <span class="nestEggPageNumber pageNumber" onclick="currentDiv(0, 'nestEgg', 'nestEggPageNumber')">1</span>
+                <span class="nestEggPageNumber pageNumber" onclick="currentDiv(1, 'nestEgg', 'nestEggPageNumber')">2</span>
+                <span class="nestEggPageNumber pageNumber" onclick="currentDiv(2, 'nestEgg', 'nestEggPageNumber')">3</span>
+              </div>
+              <i class="angle right icon projectNav" onclick="plusDivs(1, 'nestEgg', 'nestEggPageNumber')"></i>
+            </div>
+          </div>
+          <div class="projectButtons">
+            <div class="buttonRow">
+              <a class="projectLinkButton" href="https://github.com/pa87901/nestEgg" target="_blank">
+                <button class="ui negative button">
+                  GitHub base
+                </button>
+              </a>
+              <a class="projectLinkButton" target="_blank" data-inverted="" data-tooltip="Coming soon..." data-position="top left">
+                <button class="ui positive button" disabled>
+                  Video cast
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="projectDivider"></div>
+      <article class="projectArticle">
+        <div class="projectDesc">
+          <h2>Localize</h2>
+          <p>
+            Localize is a native app for the iPhone that connects tourists with local tour guides. Core functions included:
+            <ul>
+              <li>Search</li>
+              <li>Guide and user profiles</li>
+              <li>Real-time chat</li>
+              <li>Itinerary building</li>
+              <li>Payment via Stripe</li>
+            </ul>
+          </p>
+          <div class="technology">
+            <h3>Technology</h3>
+            <p>
+              Localize's front end was built using React Native and Redux; the back end was built with Node and Express. A PostgreSQL database was used for persisting data. The Google Maps and Google Places APIs were used to offer the points of interest visualisation feature. Security involved the use of Auth0. Payments for services were executed via the Stripe API.
+            </p>
+            <div class="techStack">
+              <img class="techLogo" src="./assets/techStack/reactNative.png" alt="react" />
+              <img class="techLogo" src="./assets/techStack/redux.png" alt="redux" />
+              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
+              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
+              <img class="techLogo" src="./assets/techStack/redis.png" alt="redis" />
+              <img class="techLogo" src="./assets/techStack/socketio.png" alt="socketio" />
+              <img class="techLogo" src="./assets/techStack/postgresql.png" alt="postgresql" />
+              <img class="techLogo" src="./assets/techStack/bookshelf.png" alt="bookshelf" />
+            </div>
+          </div>
+        </div>
+        <div class="projectPreviewOptions">
+          <div class="projectImgContainer">
+            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto.png" alt="localize photo"/>
+            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto2.png" alt="localize photo"/>
+            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto3.png" alt="localize photo"/>
+            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto4.png" alt="localize photo"/>
+            <img class="projectSlideImg localize" src="./assets/localize/localizePhoto5.png" alt="localize photo"/>
+            <div class="pagination">
+              <i class="angle left icon projectNav" onclick="plusDivs(-1, 'localize', 'localizePageNumber')"></i>
+              <div class="pageNumbers">
+                <span class="localizePageNumber pageNumber" onclick="currentDiv(0, 'localize', 'localizePageNumber')">1</span>
+                <span class="localizePageNumber pageNumber" onclick="currentDiv(1, 'localize', 'localizePageNumber')">2</span>
+                <span class="localizePageNumber pageNumber" onclick="currentDiv(2, 'localize', 'localizePageNumber')">3</span>
+                <span class="localizePageNumber pageNumber" onclick="currentDiv(3, 'localize', 'localizePageNumber')">4</span>
+                <span class="localizePageNumber pageNumber" onclick="currentDiv(4, 'localize', 'localizePageNumber')">5</span>
+              </div>
+              <i class="angle right icon projectNav" onclick="plusDivs(1, 'localize', 'localizePageNumber')"></i>
+            </div>
+          </div>
+          <div class="projectButtons">
+            <div class="buttonRow">
+              <a class="projectLinkButton" href="https://github.com/LightningLadles" target="_blank">
+                <button class="ui negative button">
+                  GitHub base
+                </button>
+              </a>
+              <a class="projectLinkButton" href="https://www.youtube.com/watch?v=r5UK9K7VzaM&t=14s" target="_blank">
+                <button class="ui positive button">
+                  Video cast
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+      <div class="projectDivider"></div>
+      <article class="projectArticle">
+        <div class="projectDesc">
+          <h2>4UM</h2>
+          <p>
+            4UM is a native app for the iPhone that brings together digital technology enthusiasts to discuss related topics. The app has a rating system that rewards users who answer more questions. The mode of communication is instant chat.
+          </p>
+          <div class="technology">
+            <h3>Technology</h3>
+            <p>
+              4UM was built with React Native on the front end and Node with Express on the back end. WebSockets was used to enable the instant chat feature. Authentication was incorporated using the Firebase service.
+            </p>
+            <div class="techStack">
+              <img class="techLogo" src="./assets/techStack/reactNative.png" alt="react" />
+              <img class="techLogo" src="./assets/techStack/redux.png" alt="redux" />
+              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
+              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
+              <img class="techLogo" src="./assets/techStack/socketio.png" alt="socketio" />
+              <img class="techLogo" src="./assets/techStack/postgresql.png" alt="postgresql" />
+              <img class="techLogo" src="./assets/techStack/bookshelf.png" alt="bookshelf" />
+              
+            </div>
+          </div>
+        </div>
+        <div class="reactNativeContainer">
+          <div class="projectPreviewOptions">
+            <img class="projectImg 4UM" id="nativeApp" src="./assets/4UMPhoto.png" alt="4UM photo"/>
+            <div class="projectButtons" id="nativeAppButtons">
+              <div class="buttonRow" id="nativeAppButtonRow">
+                <a class="projectLinkButton" href="https://github.com/Skooled/Magenta-Elephants" target="_blank">
+                  <button class="ui negative button">
+                    GitHub base
+                  </button>
+                </a>
+                <a class="projectLinkButton" href="https://www.youtube.com/watch?v=z2ZDnolEX6Q" target="_blank">
+                  <button class="ui positive button">
+                    Video cast
+                  </button>
+                </a>
+              </div>
+            </div>
+        </div>
+      </article>
+      <div class="projectDivider"></div>
+      <article class="projectArticle">
+        <div class="projectDesc">
+          <h2>Skooled</h2>
+          <p>
+            Skooled is a Edutech app that brings together school teachers and parents. The original idea was to enable teachers to communicate school activities to parents and request parental permission. Responses are recorded so that teachers can proceed with their school activities accordingly. Parents can view all documents for only their child or children, and teachers can view all documents for each of their pupils. Video chat enables real time visual and audio communication between parties.
+          </p>
+          <div class="technology">
+            <h3>Technology</h3>
+            <p>
+              React was used on the front end and Node on the back end. The relational database was MySQL. The video chat feature was built with WebRTC.
+            </p>
+            <div class="techStack">
+              <img class="techLogo" src="./assets/techStack/react.png" alt="react" />
+              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
+              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
+              <img class="techLogo" src="./assets/techStack/mysql.png" alt="mysql" />
+            </div>
+          </div>
+        </div>
+        <div class="projectPreviewOptions">
+          <img class="projectImg" src="./assets/skooledPhoto.png" alt="skooled photo"/>
+          <div class="projectButtons">
+            <div class="buttonRow">
+              <a class="projectLinkButton" href="https://github.com/Skooled/skooled" target="_blank">
+                <button class="ui negative button">
+                  GitHub base
+                </button>
+              </a>
+              <a class="projectLinkButton" href="https://www.youtube.com/watch?v=QYLOfbJKiLw" target="_blank">
+                <button class="ui positive button">
+                  Video cast
+                </button>
+              </a>
+            </div>
+        </div>
+      </article>
+      <div class="projectDivider"></div>
+      <article class="projectArticle">
+        <div class="projectDesc">
+          <h2>Tic Tac Toe</h2>
+          <p>
+            Tic Tac Toe is a web app that allows two players to play matches and save their usernames, avatars and scores. Players can return at a future date and play against other players. The top three players by wins are displayed.
+          </p>
+          <div class="technology">
+            <h3>Technology</h3>
+            <p>
+              The UI uses React and Semantic-UI. The backend uses Node and Express with a worker that wakes up periodically to calculate the scores of each player. Communication with the database is enabled using PG-Promise.
+            </p>
+            <div class="techStack">
+              <img class="techLogo" src="./assets/techStack/react.png" alt="react" />
+              <img class="techLogo" src="./assets/techStack/node.png" alt="node" />
+              <img class="techLogo" src="./assets/techStack/express.png" alt="express" />
+              <img class="techLogo" src="./assets/techStack/postgresql.png" alt="postgresql" />
+              <img class="techLogo" src="./assets/techStack/jest.svg" alt="jest" />
+            </div>
+          </div>
+        </div>
+        <div class="projectPreviewOptions">
+          <div class="projectImgContainer">
+            <img class="projectImg tictactoe" src="./assets/tictactoePhoto.png" alt="tictactoe photo"/>
+          </div>
+          <div class="projectButtons">
+            <div class="buttonRow">
+              <a class="projectLinkButton" href="https://github.com/pa87901/ticTacToeGame" target="_blank">
+                <button class="ui negative button">
+                  GitHub base
+                </button>
+              </a>
+              <a class="projectLinkButton" href="https://www.youtube.com/watch?v=PPvXOKS4M-4" target="_blank">
+                <button class="ui positive button">
+                  Video cast
+                </button>
+              </a>
+            </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="resume">
+      <div class="resumeDesc">
+        <h1 class="section-title">Resume</h1>
+        <article id="resumeInstruction">Download my resume here:</article>
+        <a id="download" href="assets/Preda curriculum vitae.pdf" download="" data-inverted="" data-tooltip="Click to download resume" data-position="bottom left">
+          <i class="download icon"></i>
+        </a>
+      </div>
+      <div id="resumeImgLink">
+        <a href="https://drive.google.com/open?id=1-ki57CJ8o_uqDBZUsKoezaEsz_ObVd8v" data-inverted="" data-tooltip="Click to view PDF version" data-position="right center" target="_blank">
+          <img id="resumeImg" src="./assets/resumeImg4.png" alt="resume"></img>
+        </a>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div id="contactLinks">
+        <a href="https://github.com/pa87901" target="_blank">
+          <i class="github icon external"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/preda-wen" target="_blank">
+          <i class="linkedin square icon external"></i>
+        </a>
+        <a href="https://medium.com/@Preda" target="_blank">
+          <i class="medium icon external"></i>
+        </a>
+        <a href="https://angel.co/preda" target="_blank">
+          <i class="angellist icon external"></i>
+        </a>
+        <a href="https://stackoverflow.com/users/7737763/pa87901" target="_blank">
+          <i class="stack overflow icon external"></i>
+        </a>
+        <a href="mailto:preda.anu@gmail.com" data-inverted="" data-tooltip="preda.anu@gmail.com" data-position="top left">
+          <i class="mail outline icon"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Script for smooth scrolling between sections -->
+    <script type="text/javascript" src="javascript/linksScroll.js"></script>
+    <!-- Script for project slideshow -->
+    <script type="text/javascript" src="javascript/projectSlide.js"></script>
+  </body>
+</html>

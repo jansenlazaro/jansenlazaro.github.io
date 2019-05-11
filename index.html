@@ -22,12 +22,9 @@
   <!-- user-scalable doesn't allow ppl to zoom in on mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <script src="jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("assets/bob.html"); 
-    });
-   </script>
+ 
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
 </head>
 
 <!-- APIS -->
@@ -43,7 +40,7 @@
     <a href="#about" onclick="closer()">About</a>
     <a href="#skills" onclick="closer()">Skills</a>
     <a href="#projects" onclick="closer()">Projects</a>
-    <a href="https://jennifertran.github.io/MiniProjects/" onclick="closer()" target="_blank">Mini Projects</a>
+    <a href="https://jansenlazaro.github.io/MiniProjects/" onclick="closer()" target="_blank">Mini Projects</a>
     <a href="#contact" onclick="closer()">Contact</a>
   </div>
 
@@ -51,8 +48,8 @@
 
 <!-- Where all the content goes.. -->
 <body>
+<!-- Header --> 
 
-<!-- Header -->
 <div class="header vertical-center">
 
   <a id="hamburger-icon" href="#" title="Menu" onclick="openNav()">
@@ -67,10 +64,8 @@
       <h2>Software Developer</h2>
     </div>
   </div>
-  <canvas class="background">
-  	<div id="includedContent"></div>
-  </canvas>
-</div>
+   <script src="assets/js/star.js"></script>
+  </div>
 
 <!-- About page -->
 <div class="about padding" id="about">
@@ -384,7 +379,7 @@
 <!--Footer-->
 <div class="footer header">
   <div class="container">
-    <footer><p>© 2017 by Jennifer Tran</p></footer>
+    <footer><p>© 2019 by Jansen Lazaro</p></footer>
   </div>
 </div>
 
@@ -396,8 +391,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-<script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
-<script src="assets/js/particles.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

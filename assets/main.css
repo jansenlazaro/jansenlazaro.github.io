@@ -7,6 +7,8 @@ h1{font-family:GilroyBold,Montserrat,serif!important;font-size:14vmin!important}
 h2{font-family:MoonLight,'Open Sans',sans-serif!important;font-size:25pt!important}
 h3{font-family:MoonBold,'Open Sans',sans-serif!important;font-size:20pt!important}
 h4{font-family:'Open Sans',sans-serif;font-size:15pt}
+h5{font-family:MoonBold,'Open Sans',sans-serif!important;font-size:20pt!important;
+	margin-top: 0px; text-align: center;}
 @font-face{font-family:GilroyBold;src:url(fonts/Gilroy-ExtraBold.otf)}
 @font-face{font-family:GilroyLight;src:url(fonts/Gilroy-Light.otf)}
 @font-face{font-family:MoonBold;src:url(fonts/Moon-Bold.otf)}
@@ -24,6 +26,32 @@ canvas {
   top: 0;
   z-index: -1
   }
+.outer-div {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+    align-items: center;
+    justify-content: center
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    background: #ededed;
+    border-radius: 1em;
+    -moz-box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+.res-img{
+	padding: 5px;
+	padding-top: 10px;
+}
+.res-img:hover{
+	transform: scale(1.01);
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+}
+
 .vertical-center{height:100vh;color:#fff;text-shadow:2px 2px 4px #000;min-height:100%;min-height:100vh;display:flex;align-items:center;}
 /* navigation section */
 .navbar-default{background-color:#fff!important}
